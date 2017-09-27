@@ -8,23 +8,57 @@ namespace task_4
         {
             Console.WriteLine("Syota kolme lukua ja ohjelma tulostaa syotetyt luvut ja tulostaa ne suuruusjarjestykseen.");
             Console.Write("Syota luku: ");
-            string userInput;
-            userInput = Console.ReadLine();
 
-            int numero1 = int.Parse(userInput);
             Console.WriteLine($"Syota ensimmainen luku: ");
+            string numero1 = Console.ReadLine();
+            int numx = int.Parse(numero1);
 
-            int numero2 = int.Parse(userInput);
             Console.WriteLine($"Syota toinen luku: ");
+            string numero2 = Console.ReadLine();
+            int numy = int.Parse(numero2);
 
-            int numero3 = int.Parse(userInput);
             Console.WriteLine($"Syota kolmas luku: ");
+            string numero3 = Console.ReadLine();
+            int numz = int.Parse(numero3);
 
-            if (numero1 < numero2 < numero3);
+            if(numx < numy)
             {
-            else 
+            if (numx < numz)
+                {
+                if (numy < numz)
+                {
+                        Console.WriteLine($"Järjestys on seuraava: {numx}, {numy}, {numz}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Järjestys on seuraava: {numx}, {numz}, {numy}");
+                    }
+                    
+                }
+                else
+                {
+                    Console.WriteLine($"Järjestys on seuraava: {numz}, {numx}, {numy}");
+                }
             }
+            else
+            {
+                if (numx < numz)
+                {
+                    if (numy < numz)
+                    {
+                        Console.WriteLine($"Järjestys on seuraava: {numx}, {numy}, {numz}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Järjestys on seuraava: {numx}, {numz}, {numy}");
+                    }
 
+                }
+                else
+                {
+                    Console.WriteLine($"Järjestys on seuraava: {numz}, {numx}, {numy}");
+                }
+            }
             Console.ReadKey();
         }
     }
