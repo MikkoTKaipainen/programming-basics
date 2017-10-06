@@ -71,8 +71,8 @@ namespace task_2._1._1
 
             }
             //Tulostaa lipun hinnan
-            float hinta = price - (price * (discount / 100));
-            Console.WriteLine($"Lipun hintasi on: {hinta}");
+            float pricefinal = price - (price * (discount / 100));
+            Console.WriteLine($"Lipun hintasi on: {pricefinal}");
             Console.ReadLine();
         }
 
