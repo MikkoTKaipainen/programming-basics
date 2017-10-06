@@ -24,8 +24,8 @@ namespace task_4
                 {
                 if (numx < numz)
                     {
-                    if (numy < numz)
-                    {
+                        if (numy < numz)
+                        {
                             Console.WriteLine($"Jarjestys on seuraava: {numx}, {numy}, {numz}");
                         }
                         else
@@ -41,22 +41,22 @@ namespace task_4
                 }
                 else
                 {
-                if (numx < numz)
-                {
-                    if (numy < numz)
+                    if (numx < numz)
                     {
-                        Console.WriteLine($"Jarjestys on seuraava: {numy}, {numz}, {numx}");
+                        if (numy < numz)
+                        {
+                            Console.WriteLine($"Jarjestys on seuraava: {numy}, {numz}, {numx}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Jarjestys on seuraava: {numz}, {numy}, {numx}");
+                        }
+
                     }
                     else
                     {
-                        Console.WriteLine($"Jarjestys on seuraava: {numz}, {numy}, {numx}");
+                        Console.WriteLine($"Jajestys on seuraava: {numy}, {numx}, {numz}");
                     }
-
-                }
-                else
-                {
-                    Console.WriteLine($"Jajestys on seuraava: {numy}, {numx}, {numz}");
-                }
 
                 }
             Console.ReadKey();
