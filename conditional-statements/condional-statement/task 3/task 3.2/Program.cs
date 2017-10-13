@@ -6,7 +6,7 @@ namespace task_3._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ohjelma laskee kertoman. Anna luku, jonka kertoma laskee");
+            Console.WriteLine("Ohjelma laskee lisayksen. Anna luku, jonka lisays laskee");
             string userInput = Console.ReadLine();
             int number = int.Parse(userInput);
             int f = 0;
