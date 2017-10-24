@@ -11,7 +11,7 @@ namespace task_4._3
 
             for (int number = 0; number < 4; number++)
             {
-                Console.Write($"Rivi:");
+                Console.Write($"Rivi {number+1}: ");
                 for (int number2 = 0; number2 < 5; number2++)
                 {
                     if (number2 < 4)
