@@ -20,20 +20,6 @@ namespace task_4._2
                 }
             }
             Console.ReadKey();
-
-            /*
-             while(number <= 9)
-             {
-             do shit
-             while(multip <=9)
-             {
-                do shit 2
-                multip++;
-             }
-             number++;
-             multip = 1;
-             }
-             */
         }
     }
 }
