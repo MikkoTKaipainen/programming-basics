@@ -8,15 +8,26 @@ namespace task_2._1
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma kysyy lukuja käyttäjältä. Ohjelma päättyy antamalla kaksi samaa lukua peräkkäin. Syötä lukuja:");
-            string userInput;
-            int number = 0;
-            userInput = Console.ReadLine();
+            int userInput = 0;
+            int sum = 0;
+            int last = 0;
 
-            while (true)
+            while (last == userInput)
             {
-                userInput = userInput;
+                Console.Write("Syötä luku ");
+                int.TryParse(Console.ReadLine(), out userInput);
+     
+                if  (userInput != last)
+                {
+                    sum = sum + userInput;
+                    last = userInput;
+                }
+                else
+                {
+                    break;
+                }
             }
-
+            Console.WriteLine($"Lukujen summa on {sum}");
             Console.ReadKey();
         }
     }
