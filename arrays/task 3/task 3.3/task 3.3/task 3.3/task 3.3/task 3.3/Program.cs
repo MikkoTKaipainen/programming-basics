@@ -15,7 +15,7 @@ namespace task_3
             int[] arrT_3 = new int[10];
 
             //tulostetaan numerot 1- 10 tulostusta varten sekä - - - - - - numeroiden alapuolelle
-            Console.Write("");
+            Console.Write("         ");
             for (int i = 0; i < 10; i++)
             {
                 if (i < 10)
@@ -28,66 +28,45 @@ namespace task_3
                 }
             }
 
-            Console.WriteLine("");
-            for (int i = 0; i < 15; i++)
-            {
-                Console.Write("- ");
-            }
             Console.WriteLine();
 
             // tulostetaan taulukoiden arvot
             for (int i = 0; i < 10; i++)
             {
-                for (int j = 0; j < 10; j++)
+                arrT_1[i] = rnd.Next(50);
+                arrT_2[i] = rnd.Next(50);
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                if(arrT_1[i] < arrT_2[i])
                 {
-                    if
-                    {
-                        numbers[i, j] = int.Parse(getNum());
-                        Console.WriteLine($"[{i:00} , {j:00}] = {numbers[i, j]:00}");
-                    }
-                //    if (arrT_1[i] < 10)
-                //    {
-                //        arrT_1[i] = int.Parse(getNum());
-                //        Console.WriteLine($"arrT_1: {arrT_1} ");
-                //    }
-                //    if (arrT_2[j] < 10)
-                //    {
-                //        arrT_2[j] = int.Parse(getNum());
-                //        Console.WriteLine($"arrT_2: {arrT_2} ");
-                //    }
+                    arrT_3[i] = arrT_2[i];
+                }
+                else
+                {
+                    arrT_3[i] = arrT_1[i];
                 }
             }
-
+            Console.WriteLine("         - - - - - - - - - - - - - - - ");
+            Console.WriteLine($"arrT_1: {getPrint(arrT_1)}");
+            Console.WriteLine($"arrT_2: {getPrint(arrT_2)}");
+            Console.WriteLine($"arrT_3: {getPrint(arrT_3)}");
+            
             Console.ReadKey();
         }
-        //funktio jolla arvotaan luvut taulukoihin 1 ja 2
-        static string getNum()
-        {
-            int X = rnd.Next(0, 50 + 1);
-            string res = "";
 
-            if (X < 10)
-            {
-                res = X.ToString();
-            }
-            else
-            {
-                res = X.ToString();
-            }
-            return res;
-        }
         //funktio jolla poimitaan taulukkoon 3 suurimmat arvot taulukosta 1 ja 2
-        static string getArr()
+        public static string getPrint(int[] arrayx)
         {
-            int getArr = ;
-            string res = "";
-
-            for (int i = 0; i < 50; i++)
+            string res = " ";
+            
+            for (int i = 0; i < arrayx.Length; i++)
             {
-                if ()
+                res += $"{arrayx[i]:00} ";
             }
 
-            return res = "";
+            return res;
+
         }
     }
 }
