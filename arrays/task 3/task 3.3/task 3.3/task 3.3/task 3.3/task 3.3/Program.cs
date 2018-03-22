@@ -14,7 +14,7 @@ namespace task_3
             int[] arrT_2 = new int[10];
             int[] arrT_3 = new int[10];
 
-            //tulostetaan numerot 1- 10 tulostusta varten sekä - - - - - - numeroiden alapuolelle
+            //tulostetaan taulukon numerointi
             Console.Write("         ");
             for (int i = 0; i < 10; i++)
             {
